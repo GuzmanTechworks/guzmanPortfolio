@@ -56,6 +56,11 @@
     width: 30px;
     border-radius: 50%;
     /* border: 1px solid red; */
+    transition: all 1s ease;
+}
+.style-switcher .colors span:hover{
+    transform: translateY(-5px);
+    border: 1px solid var(--bg-black-100);
 }
 .style-switcher .color-1{
     background: #e6c619;

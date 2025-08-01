@@ -79,3 +79,22 @@ const navTogglerBtn = document.querySelector(".nav-toggler"),
             allSection[i].classList.toggle("open");
         }
     }
+    window.addEventListener("scroll", () => {
+  let current = "";
+
+  allSection.forEach((section) => {
+    const sectionTop = section.offsetTop - 100;
+    const sectionHeight = section.offsetHeight;
+    if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navList.forEach((li) => {
+    const a = li.querySelector("a");
+    a.classList.remove("active");
+    if (a.getAttribute("href").includes(current)) {
+      a.classList.add("active");
+    }
+  });
+});
