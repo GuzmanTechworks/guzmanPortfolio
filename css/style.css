@@ -252,7 +252,7 @@ body{
 }
 
 .aside .nav{
-  margin-top: 50px;
+  margin-top: 150px;
 }
 .aside .nav li{
   margin-bottom: 20px;
@@ -1003,3 +1003,9 @@ h3.hello span {
     font-size: 25px;
 }
 }
+/* @media (max-height: 860px) {
+ .aside .nav{
+  margin-top: 140px;
+ }
+}
+ */
